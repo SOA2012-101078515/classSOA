@@ -1,3 +1,6 @@
+link:http://140.114.135.42:3000
+
+
 1.before u create a website, u should create a controller to handle when server receive a request.
 2.controller will receive data from DB by modeler
 3.controller will tell view how to show the result in HTML

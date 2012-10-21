@@ -1,16 +1,29 @@
 link:http://140.114.135.42:3000
 
-
-1.before u create a website, u should create a controller to handle when server receive a request.
-2.controller will receive data from DB by modeler
-3.controller will tell view how to show the result in HTML
-4.config/routes.rb can define what action will be taken when some1 linked here.
-5.app/controllers/XXX_controller.rb wiil define the action.
-6.prepare a view
+rail:
 
 
+	1.before u create a website, u should create a controller to handle when server receive a request.
+	2.controller will receive data from DB by modeler
+	3.controller will tell view how to show the result in HTML
+	4.config/routes.rb can define what action will be taken when some1 linked here.
+	5.app/controllers/XXX_controller.rb wiil define the action.
+	6.prepare a view
 
 
-notice!!
 
-the exception 'Could not find a JavaScript runtime' beacuse ubuntu didn't prepare javascript interpreter.so,all we nid to do is vi Gemfile and add gem 'therubyracer'.
+
+	notice!!
+
+	the exception 'Could not find a JavaScript runtime' beacuse ubuntu didn't prepare javascript interpreter.so,all we nid to do is vi Gemfile and add gem 'therubyracer'.
+
+db:
+
+	1.migration: use to define the db schema
+	2.Mass Assignment error :http://stackoverflow.com/questions/10574957/activemodelmassassignmentsecurityerror-cant-mass-assign-protected-attribut
+
+
+ruby:
+	1.@:object variable  @@:class variable
+	2.Every method in Ruby returns a value by default. This returned value will be the value of the last statement.
+	3.we can define variables in module, and been used in different class

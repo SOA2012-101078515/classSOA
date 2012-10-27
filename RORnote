@@ -10,6 +10,10 @@ rail:
 	5.app/controllers/XXX_controller.rb wiil define the action.
 	6.prepare a view
 
+	7.REST means when client get some resource, they change their app status. //config/routes.rb  resources :XX
+	8.ActiveModel::MassAssignmentSecurity::Error: Can't mass-assign protected attributes:  
+	  add "attr_accessible" to model
+	9.if we change routes.rb before swap into RESTful, it may change the default routes
 
 
 

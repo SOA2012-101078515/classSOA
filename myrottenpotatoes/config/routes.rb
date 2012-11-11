@@ -1,7 +1,8 @@
 Myrottenpotatoes1::Application.routes.draw do
    resources :movies
+   resources :test
+   post '/movies/search_tmdb'
    root :to => redirect('/movies')
-
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -17,13 +17,21 @@ rail:
         10.params is a hash include all information sent by client and we can get any info of param by params[:idOfParams]
         11.in the views, (= controllerNmae.method)
         12. :var=>varaible   "var"=>string
-
+	13. Cucumber-rails required outside of env.rb.   solution:http://stackoverflow.com/questions/9866264/warning-cucumber-rails-required-outside-of-env-rb
+	
 
 
 
         notice!!
 
         the exception 'Could not find a JavaScript runtime' beacuse ubuntu didn't prepare javascript interpreter.so,all we nid to do is vi Gemfile and add gem 'therubyracer'.
+
+
+cucumber:
+
+	1.if cant't mapping, just modify the feature/paths and add "when" condition, then lead to the route
+	
+
 
 db:
 

@@ -43,3 +43,10 @@ ruby:
 	1.@:Object variable  @@:class variable
 	2.Every method in Ruby returns a value by default. This returned value will be the value of the last statement.
 	3.we can define variables in module, and been used in different class
+	4.type thread.join after start the thread
+
+HTML5
+
+	1.canvas can be the dynamic background of a website
+	2.javascript can control html tages by knowing id or class name
+	3.css of ROR are put in the stylesheet

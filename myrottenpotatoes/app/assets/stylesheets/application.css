@@ -76,3 +76,9 @@ form label {
   font-weight: bold;
   color: maroon;
 }
+
+div.field_with_errors input {
+  border: 1px solid red;
+  background-color: yellow;
+  font-weight: bold;
+}

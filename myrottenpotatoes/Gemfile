@@ -54,3 +54,7 @@ group :test, :development do
 end
 
 gem 'rspec-rails'
+gem 'omniauth-twitter'
+gem 'oauth'
+gem 'omniauth-github'
+gem 'omniauth-openid'

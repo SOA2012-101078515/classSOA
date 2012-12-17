@@ -1,0 +1,4 @@
+a = "a".."z"
+a.each do |i|
+	print "    "+i
+end

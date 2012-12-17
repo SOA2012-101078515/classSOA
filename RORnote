@@ -18,7 +18,7 @@ rail:
         11.in the views, (= controllerNmae.method)
         12. :var=>varaible   "var"=>string
 	13. Cucumber-rails required outside of env.rb.   solution:http://stackoverflow.com/questions/9866264/warning-cucumber-rails-required-outside-of-env-rb
-	
+	14.application.html.erb is the layout of the website
 
 
 
@@ -40,7 +40,7 @@ db:
 
 
 ruby:
-	1.@:Object variable  @@:class variable
+	1.@:Object variable  @@:class variable :normal variable
 	2.Every method in Ruby returns a value by default. This returned value will be the value of the last statement.
 	3.we can define variables in module, and been used in different class
 	4.type thread.join after start the thread

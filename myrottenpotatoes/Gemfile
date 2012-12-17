@@ -58,10 +58,11 @@ group :test, :development do
 	gem 'database_cleaner'
 	gem 'capybara'
 	gem 'launchy'
+	gem 'rspec-rails'
 end
 
-gem 'rspec-rails'
-gem 'omniauth-twitter'
-gem 'oauth'
-gem 'omniauth-github'
-gem 'omniauth-openid'
+
+
+
+
+

@@ -1,14 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Dashanba</title>
+  <title>Firstproject</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
+
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body onresize = "adjustWidth()" onload="document.onkeydown=keyf">
+<canvas id="myCanvas"></canvas>
+    <div id="id-all" class="all" >
+      <div id="id-top" calss="top">
+      <div id="id-brand" class="brand"></div>
+        <div style="margin-left: 250px; margin-top: -0px; height: 150px; background-color: transparent; width: 750px;">
+          <div id="id-top-bar" calss="top-bar" style="float: left; margin-top:-23px; height: 23px; width: 750px; background-color: transparent;">
+            <ul id="if-top-ul">
+              <li><a herf="1">reservation</a></li>
+              <li><a herf="2">about us</a></li>
+              <li><a herf="3">service</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="id-main" class="main">
+        <%= yield%>
+      </div>
+      <div id="id-bottom" class="bottom" style="margin-left: 0px; height: 100px; background-color: #000000; width: 1000px;"></div>
 
-<%= yield %>
+
+    </div>
+
 
 </body>
 </html>
+<script>
+
+	adjustWidth();
+        function adjustWidth(){
+                var w = 0;
+                var mysize = 1000; 
+                if (document.body.clientWidth){ 
+                        w = document.body.clientWidth;    
+                }
+                var allDiv = document.getElementById("id-all");
+                var posCanvas = document.getElementById("myCanvas");
+                var st = (w-1000)/2;
+                if(st>0){
+                        allDiv.style.left = st+"px";
+                        posCanvas.style.left = st+"px";
+                }
+        }
+     function deleBack(){
+                //var deleback = document.getElementById("id-main");
+                //deleback.background-color = "black";
+        } 
+    </script>

@@ -1,4 +1,7 @@
 Dashanba::Application.routes.draw do
+
+	resources :introduce
+	root :to=>redirect('/introduce')
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

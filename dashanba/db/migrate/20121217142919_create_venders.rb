@@ -1,0 +1,23 @@
+class CreateVender < ActiveRecord::Migration
+  def up
+	create_table 'vender' do |t|
+	t.integer 'v_id'
+	t.string 'v_account'
+	t.string 'v_password'
+	t.string 'v_name'
+	t.string 'v_phone'
+	t.string 'address'
+	t.string 'gift'
+	t.string 'giftphoto'
+	t.string 'street'
+	t.string 'businesshour'
+	t.timestamps
+
+	#add_index(:vender, :v_id, :unique => true)
+	end
+  end
+
+  def down
+drop_table 'vender'
+  end
+end

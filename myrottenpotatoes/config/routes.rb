@@ -1,5 +1,7 @@
 Myrottenpotatoes1::Application.routes.draw do
 
+  mount Mercury::Engine => '/'
+
    resources :movies
    post '/movies/search_tmdb'  
    root :to => redirect('/movies')

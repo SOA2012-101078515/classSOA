@@ -1,5 +1,8 @@
 Dashanba::Application.routes.draw do
 
+	match 'introduce/briefIntro'=>'introduce#briefIntro'
+	resources :mission
+	resources :customer
 	resources :introduce
 	root :to=>redirect('/introduce')
   # The priority is based upon order of creation:

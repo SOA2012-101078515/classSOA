@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  mission_id: 1
+  c_name: MyString
+  v_name: MyString
+  place: MyString
+  gift: MyString
+  request: MyText
+
+two:
+  mission_id: 1
+  c_name: MyString
+  v_name: MyString
+  place: MyString
+  gift: MyString
+  request: MyText

@@ -1,0 +1,11 @@
+<%= form_tag '/mission', :method=>nil  do %>
+
+        <%= label :mission, :c_name, 'name'%>
+        <%= text_field :mission, :c_name%>
+
+        <%= label :mission, :start, 'time'%>
+        <%= text_field :mission, :start%>
+        <%= submit_tag 'save'%>
+
+<% end%>
+

@@ -1,3 +1,5 @@
 class Vender < ActiveRecord::Base
-  # attr_accessible :title, :body
+  attr_accessible :address, :name, :passwd, :phone, :realnamei
+
+	has_many :missions
 end

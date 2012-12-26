@@ -11,13 +11,13 @@
 <canvas id="myCanvas"></canvas>
     <div id="id-all" class="all" >
       <div id="id-top" calss="top">
-      <div id="id-brand" class="brand"></div>
+      <div id="id-brand" class="brand"><%=link_to image_tag("#{'logo.png'}"),introduce_index_path%></div>
         <div style="margin-left: 250px; margin-top: -0px; height: 150px; background-color: transparent; width: 750px;">
           <div id="id-top-bar" calss="top-bar" style="float: left; margin-top:-23px; height: 23px; width: 750px; background-color: transparent;">
             <ul id="if-top-ul">
-		<li><%=link_to "login"%></li>
+		<li><%=link_to "login", customer_index_path%></li>
 		<li><%=link_to "mission", mission_index_path%></li>
-		<li><a herf="2">about us</a></li>
+		<li><%=link_to "about us", introduce_aboutus_path%></li>
 		<li><%=link_to " briefintro", introduce_briefIntro_path%></li>
             </ul>
           </div>
@@ -26,7 +26,7 @@
       <div id="id-main" class="main">
         <%= yield%>
       </div>
-      <div id="id-bottom" class="bottom" style="margin-left: 0px; height: 100px; background-color: #000000; width: 1000px;"></div>
+      <div id="id-bottom" class="bottom" style="margin-left: 0px; height: 100px; background-color: #000000; width: 1000px;"><%=image_tag("#{'copyright.png'}")%></div>
 
 
     </div>

@@ -3,8 +3,14 @@
         <%= label :mission, :c_name, 'name'%>
         <%= text_field :mission, :c_name%>
 
+	<%= label :mission, :num_of_people, 'number of people'%>
+        <%= select :mission, :num_of_people, [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]%>
+
         <%= label :mission, :start, 'time'%>
-        <%= text_field :mission, :start%>
+        <%= datetime_select :mission, :start%>
+
+	<%= label :mission, :gift, 'gift'%>
+	<%= select :mission, :gift, ['bread','chiken','telescope']%>
         <%= submit_tag 'save'%>
 
 <% end%>

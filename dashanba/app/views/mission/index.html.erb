@@ -1,5 +1,30 @@
-mission list
 
-<%= Mission.all%>
+<%=image_tag("#{'exchange.png'}")%>
+<%=link_to "choice", new_mission_path%>
 
-<%= link_to "choice", new_mission_path%>
+<table class="missions">
+	<thead>
+		<tr>
+			<th>name</th>
+			<th>gift</th>
+			<th>number of people</th>
+			<th>datetime</th>
+			<th>place</th>
+			<th>request</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @missions.each do |mission| -%>
+                        <tr>
+                                <td><%=mission.c_name%></td>
+                                <td><%=mission.gift%></td>
+				<td><%=mission.num_of_people%></td>
+                                <td><%=mission.start%></td>
+				<td><%=mission.place%></td>
+				<td><%=mission.request%></td>
+                        </tr>	
+		<% end-%>
+	</tbody>
+
+
+</table>

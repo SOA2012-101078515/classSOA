@@ -11,3 +11,29 @@
  *= require_self
  *= require_tree .
  */
+
+form label {
+	display: block;
+	line-height: 25px;
+	font-weight: bold;
+	color: blue;
+}
+
+table#missions {
+	margin: 10px;
+	border-collapse: collapse;
+	width: 900px;
+	border-bottom: 2px solid black;
+}
+
+table#missions th {
+	border: 2px solid white;
+	font-weight: bold;
+	background-color: white;
+
+}
+
+table#missions th, table#missions td {
+	padding: 4px;
+	text-align: left;
+}

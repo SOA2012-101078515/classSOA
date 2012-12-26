@@ -1,5 +1,6 @@
 Dashanba::Application.routes.draw do
 
+	match 'introduce/aboutus'=>'introduce#aboutus'
 	match 'introduce/briefIntro'=>'introduce#briefIntro'
 	resources :mission
 	resources :customer

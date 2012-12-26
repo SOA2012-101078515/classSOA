@@ -1,19 +1,19 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  mission_id: 1
+  mission_id: MyString
   c_name: MyString
   gift: MyString
   place: MyString
-  request: MyString
+  request: MyText
   v_name: MyString
-  start: 2012-12-22 22:08:14
+  start: 2012-12-22 22:50:04
 
 two:
-  mission_id: 1
+  mission_id: MyString
   c_name: MyString
   gift: MyString
   place: MyString
-  request: MyString
+  request: MyText
   v_name: MyString
-  start: 2012-12-22 22:08:14
+  start: 2012-12-22 22:50:04

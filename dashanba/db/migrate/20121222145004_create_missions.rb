@@ -7,7 +7,7 @@ class CreateMissions < ActiveRecord::Migration
       t.text :request
       t.string :v_name
       t.datetime :start
-      t.num_of_people :integer
+      t.integer :num_of_people
 
       t.references :customers
       t.references :venders

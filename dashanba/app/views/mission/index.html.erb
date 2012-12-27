@@ -1,26 +1,70 @@
+<style type="text/css">
+	#list{color: red;
+	margin-left:60px;
+	margin-right:80px;
+	padding:25px;
+	padding-left:150px;
+	padding-top: 50px;
+	border-style:solid;
+	border-width:3px;
+	border-color:white;
+	font-family:cursive;
+	background-image:url('<%= asset_path("list.png") %>');
+	background-position:top left;
+	background-repeat:no-repeat;
+		}
 
+#sign{
+text-align:left;
+font-size:24px;
+text-decoration:underline;
+margin-left:660px;
+}
+
+#missions{
+	border:3px;
+	font-family:arial;
+	font-size:20px;
+	color:black;
+}
+
+h1{
+text-align:left;
+font-size:24px;
+color:#c71585;
+}
+
+</style>
+
+<body>
 <%=image_tag("#{'exchange.png'}")%>
-<%=link_to "choice", new_mission_path%>
+<div id="sign">
+<%=link_to "請按此前往報名", new_mission_path%>
+</div>
 
+<div id="list">
+<h1>
+報名名單-------------------------------------
+</h1>
 <table class="missions">
 	<thead>
 		<tr>
-			<th>name</th>
-			<th>gift</th>
-			<th>number of people</th>
-			<th>datetime</th>
-			<th>place</th>
-			<th>request</th>
+			<th width=75px>姓名</th>
+			<th>參加人數</th>
+			<th>時間</th>
+			<th width=75px>地點</th>
+			<th width=75px>禮物</th>
+			<th width=75px>備註</th>
 		</tr>
 	</thead>
 	<tbody>
 		<% @missions.each do |mission| -%>
                         <tr>
                                 <td><%=mission.c_name%></td>
-                                <td><%=mission.gift%></td>
 				<td><%=mission.num_of_people%></td>
                                 <td><%=mission.start%></td>
 				<td><%=mission.place%></td>
+				<td><%=mission.gift%></td>
 				<td><%=mission.request%></td>
                         </tr>	
 		<% end-%>
@@ -28,3 +72,5 @@
 
 
 </table>
+</div>
+</body>

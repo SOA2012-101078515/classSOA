@@ -1,17 +1,59 @@
+<style type="text/css">
+	#sign_up{color: green;
+		
+		padding:25px;
+		padding-left:150px;
+		padding-top: 50px;
+		border-style:outset;
+		border-width:7px;
+		border-color:white;
+		font-family:cursive;
+		background-image:url('<%= asset_path("garbage.png") %>');
+		background-position:top left;
+		background-repeat:no-repeat;
+		background-color:#c0c0c0;
+		text-align:left;
+		font-size:20px;
+	}
+	#out{
+		border-style:dashed;
+		border-color:#ff6347;
+		border-width:4px;
+		
+		padding:10px;
+		margin-top:5px;
+		margin-left:110px;
+		margin-right:160px;
+		margin-bottom:30px;
+
+	}
+	#test{
+text-align:right;
+	}
+
+</style>
+<body>
+<h1>歡迎和我們一起“換”想大山背</h1>
+<div id="out">
+<div id="sign_up">
 <%= form_tag '/mission', :method=>nil  do %>
 
-        <%= label :mission, :c_name, 'name'%>
+        <%= label :mission, :c_name, '姓名'%>
         <%= text_field :mission, :c_name%>
 
-	<%= label :mission, :num_of_people, 'number of people'%>
+	<%= label :mission, :num_of_people, '參加人數'%>
         <%= select :mission, :num_of_people, [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]%>
 
-        <%= label :mission, :start, 'time'%>
+        <%= label :mission, :start, '時間'%>
         <%= datetime_select :mission, :start%>
 
-	<%= label :mission, :gift, 'gift'%>
-	<%= select :mission, :gift, ['bread','chiken','telescope']%>
-        <%= submit_tag 'save'%>
+	<%= label :mission, :gift, '禮物'%>
+	<%= select :mission, :gift, ['大嬸婆的家 - 手工窯烤麵包','高頂農莊 - 客家料理','大山背人文生態館 - 望遠鏡']%>
+	<div id="test">
+        <%= submit_tag '確定'%>
+	</div>
 
 <% end%>
-
+</div>
+</div>
+</body>

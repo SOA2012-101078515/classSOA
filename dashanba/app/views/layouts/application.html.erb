@@ -7,27 +7,49 @@
 
   <%= csrf_meta_tags %>
 </head>
+<style type="text/css">
+#id-brand{
+	width:300px;
+	float:left;
+}
+
+table{padding:20px;
+}
+
+td{width:200px;
+text-align:center;
+
+}
+</style>
 <body onresize = "adjustWidth()" onload="document.onkeydown=keyf">
 <canvas id="myCanvas"></canvas>
-    <div id="id-all" class="all" >
+    <div id="id-all" class="all"  >
       <div id="id-top" calss="top">
       <div id="id-brand" class="brand"><%=link_to image_tag("#{'logo.png'}"),introduce_index_path%></div>
-        <div style="margin-left: 250px; margin-top: -0px; height: 150px; background-color: transparent; width: 750px;">
-          <div id="id-top-bar" calss="top-bar" style="float: left; margin-top:-23px; height: 23px; width: 750px; background-color: transparent;">
-            <ul id="if-top-ul">
-		<li>	<% if current_user %>
-    			Signed in as <strong><%= current_user.name %></strong>!
-    			<%= link_to "Sign out", signout_path, id: "sign_out" %>
-  			<% else %>
-    			<%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
+	<div id="menu"  style=" width:800px;height: 80px;margin-left: 100px; margin-top: 20px;">
+	<table>
+	<tr>
+		<td><%=image_tag("#{'menu_dashnba.png'}")%></td>
+		<td><%=image_tag("#{'menu_garbage.png'}")%></td>
+		<td><%=image_tag("#{'menu_people.png'}")%></td>
+		<td><%=image_tag("#{'menu_login.png'}")%></td>
+	</tr>
+	<tr>
+	<td><%=link_to "大山背介紹", introduce_briefIntro_path%></td>
+	<td><%=link_to "“換”想大山背", mission_index_path%></td>
+	<td><%=link_to "關於我們", introduce_aboutus_path%></td>
+	<td><% if current_user %>
+	    			Signed in as <strong><%= current_user.name %></strong>!
+	    			<%= link_to "登出", signout_path, id: "sign_out" %>
+	  			<% else %>
+	    			<%= link_to "登入", "/auth/facebook", id: "sign_in" %>
   			<% end %>
-		</li>
-		<li><%=link_to "mission", mission_index_path%></li>
-		<li><%=link_to "about us", introduce_aboutus_path%></li>
-		<li><%=link_to " briefintro", introduce_briefIntro_path%></li>
-            </ul>
-          </div>
-        </div>
+	</td>
+	</tr>
+	</table>
+</div>
+          
+   
       </div>
       <div id="id-main" class="main">
         <%= yield%>

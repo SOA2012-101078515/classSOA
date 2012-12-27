@@ -30,6 +30,8 @@ ActiveRecord::Schema.define(:version => 20121226031456) do
     t.string   "v_name"
     t.datetime "start"
     t.integer  "num_of_people"
+    t.integer  "customers_id"
+    t.integer  "venders_id"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
   end

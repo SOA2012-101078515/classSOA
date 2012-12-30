@@ -9,8 +9,8 @@ class CreateMissions < ActiveRecord::Migration
       t.datetime :start
       t.integer :num_of_people
 
-      t.references :customers
-      t.references :venders
+      t.references :user
+      t.references :vender
 
       t.timestamps
     end

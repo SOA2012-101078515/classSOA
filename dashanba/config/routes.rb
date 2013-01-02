@@ -4,7 +4,7 @@ Dashanba::Application.routes.draw do
   	match 'auth/failure', to: redirect('/')
   	match 'signout', to: 'sessions#destroy', as: 'signout'
 
-
+	match 'introduce/tour'=>'introduce#tour'
 	match 'introduce/aboutus'=>'introduce#aboutus'
 	match 'introduce/briefIntro'=>'introduce#briefIntro'
 	resources :mission

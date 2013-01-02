@@ -1,19 +1,7 @@
-
-<button onclick='movepic("/assets/play_tour.png")'>play_tour</button>
-<button onclick='movepic("/assets/play_space.png")'>play_space</button>
-<button onclick='movepic("/assets/play_traffic.png")'>play_traffic</button>
-<button onclick='movepic("/assets/play_walkway.png")'>play_walkway</button>
-
-<img id="introduction" src="/assets/welcome.png">
-
+<div id="introduction">
+<%=link_to image_tag("#{'welcome.png'}"),introduce_tour_path%>
+</div>
 <iframe src="https://www.facebook.com/plugins/like.php?href=http://dashanba.herokuapp.com/introduce"
         scrolling="no" frameborder="0"
         style="border:none; width:450px; height:80px"></iframe>
-
-<script>
-        function movepic(img_src) {
-                document.getElementById("introduction").src=img_src;
-        }
-
-</script>
 

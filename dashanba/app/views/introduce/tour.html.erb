@@ -1,0 +1,14 @@
+<button onclick='movepic("/assets/play_tour.png")'>play_tour</button>
+<button onclick='movepic("/assets/play_space.png")'>play_space</button>
+<button onclick='movepic("/assets/play_traffic.png")'>play_traffic</button>
+<button onclick='movepic("/assets/play_walkway.png")'>play_walkway</button>
+
+<img id="tour" src="/assets/play_walkway.png">
+
+<script>
+        function movepic(img_src) {
+                document.getElementById("tour").src=img_src;
+        }
+
+</script>
+

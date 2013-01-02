@@ -4,7 +4,10 @@
 <body>
 <%=image_tag("#{'exchange.png'}")%>
 <div id="sign">
-<%=link_to "請按此前往報名", new_mission_path%>
+<%=link_to_if current_user.nil?,"login and reserve", " /auth/facebook" do
+	link_to "reservation", new_mission_path
+   end
+%>
 </div>
 
 <div id="list">

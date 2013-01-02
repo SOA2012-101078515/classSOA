@@ -1,5 +1,6 @@
 <%= stylesheet_link_tag    "mission_new", :media => "all" %>
 
+
 <body>
 <h1>歡迎和我們一起“換”想大山背</h1>
 <div id="out">
@@ -7,7 +8,7 @@
 <%= form_tag '/mission', :method=>nil  do %>
 
         <%= label :mission, :c_name, '姓名'%>
-        <%= text_field :mission, :c_name%>
+        <%= text_field :mission, :c_name, :value=>current_user.name%>
 
 	<%= label :mission, :num_of_people, '參加人數'%>
         <%= select :mission, :num_of_people, [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]%>

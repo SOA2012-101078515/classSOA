@@ -1,3 +1,75 @@
 // Place all the styles related to the mission controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#list{color: red;
+	margin-left:60px;
+	margin-right:80px;
+	padding:25px;
+	padding-left:150px;
+	padding-top: 50px;
+	border-style:solid;
+	border-width:3px;
+	border-color:white;
+	font-family:cursive;
+	background-image:image-url("list.png");
+	background-position:top left;
+	background-repeat:no-repeat;
+}
+
+#sign{
+	text-align:left;
+	font-size:24px;
+	text-decoration:underline;
+	margin-left:660px;
+}
+
+
+#missions{
+	border:3px;
+	font-family:arial;
+	font-size:20px;
+	color:black;
+}
+
+h1{
+	text-align:left;
+	font-size:24px;
+	color:#c71585;
+}
+
+#sign_up{color: green;
+	
+	padding:25px;
+	padding-left:150px;
+	padding-top: 50px;
+	border-style:outset;
+	border-width:7px;
+	border-color:white;
+	font-family:cursive;
+	background-image:image-url("garbage.png");
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-color:#c0c0c0;
+	text-align:left;
+	font-size:20px;
+}
+#out{
+	border-style:dashed;
+	border-color:#ff6347;
+	border-width:4px;
+	
+	padding:10px;
+	margin-top:5px;
+	margin-left:110px;
+	margin-right:160px;
+	margin-bottom:30px;
+
+}
+#test{
+	text-align:right;
+}
+h1{
+	text-align:center;
+}
+

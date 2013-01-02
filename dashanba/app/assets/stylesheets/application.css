@@ -38,4 +38,15 @@ table#missions th, table#missions td {
 	text-align: left;
 }
 
+#id-brand{
+	width:300px;
+	float:left;
+}
 
+table{padding:20px;
+}
+
+td{width:200px;
+text-align:center;
+
+}

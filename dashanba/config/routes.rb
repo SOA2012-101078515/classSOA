@@ -5,10 +5,6 @@ Dashanba::Application.routes.draw do
   	match 'signout', to: 'sessions#destroy', as: 'signout'
 
 
-	match 'introduce/history'=>'introduce#history'
-	match 'introduce/human'=>'introduce#human'
-	match 'introduce/nature'=>'introduce#nature'
-	match 'introduce/season'=>'introduce#season'	
 	match 'introduce/aboutus'=>'introduce#aboutus'
 	match 'introduce/briefIntro'=>'introduce#briefIntro'
 	resources :mission

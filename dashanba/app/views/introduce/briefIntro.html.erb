@@ -1,12 +1,22 @@
 <div id="briefintro-menu"  >
-        <ul>
-        	<li onclick='movepic("/assets/dashanba_human.png")'><button>human</button></li>
-        	<li onclick='movepic("/assets/dashanba_history.png")'><button>history</button></li>
-        	<li onclick='movepic("/assets/dashanba_nature.png")'><button>nature</button></li>
-		<li onclick='movepic("/assets/dashanba_season.png")'><button>season</button></li>
-	</ul>
+<img id="dashanba_banner" src="/assets/dashanba_banner.png">
+
 </div>
-<img id="briefintro_pic" src="/assets/dashanba_history.png">
+
+
+<div style="height:100px; width: 1000px">
+	<div style=" width:200px;height: 100px;float:left">
+	    <ul style="list-style-type:none;">
+        	<li onclick='movepic("/assets/dashanba_human.png")'><img src="/assets/button_human.png" width=140px ALIGN="ABSMIDDLE"></li>
+        	<li onclick='movepic("/assets/dashanba_history.png")'><img src="/assets/button_history.png" width=140px ALIGN="ABSMIDDLE"></li>
+        	<li onclick='movepic("/assets/dashanba_nature.png")'><img src="/assets/button_nature.png" width=140px ALIGN="ABSMIDDLE"></li>
+		<li onclick='movepic("/assets/dashanba_season.png")'><img src="/assets/button_season.png" width=140px ALIGN="ABSMIDDLE"></li>
+	    </ul>
+	</div>
+	<div style=" width:800px;float:left">
+<img id="briefintro_pic" src="/assets/dashanba_human.png">
+	</div>
+</div>
 
 <script>
 	function movepic(img_src) {
@@ -14,3 +24,4 @@
 	}
 
 </script>
+

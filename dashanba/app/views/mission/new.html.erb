@@ -6,6 +6,8 @@
 <div id="out">
 <div id="sign_up">
 <%= form_tag '/mission', :method=>nil  do %>
+	<%= label :mission, :venderdetail_id, 'vender_id'%>
+        <%= text_field :mission, :venderdetail_id, :value=>1%>
 
         <%= label :mission, :c_name, '姓名'%>
         <%= text_field :mission, :c_name, :value=>current_user.name%>

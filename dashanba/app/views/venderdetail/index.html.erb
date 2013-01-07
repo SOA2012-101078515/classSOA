@@ -1,0 +1,27 @@
+
+vender (1), hello!
+</br>
+Here are all your customer records
+</br>
+<table>
+        <thead>
+                <tr>
+                        <th>customer name</th>
+			<th>gift</th>
+			<th>time</th>
+			<th>number of people</th>
+                </tr>
+        </thead>
+        <tbody>
+                <%@venderdetails.each do |venderdetail|%>
+                        <tr>
+                                <td><%=venderdetail.c_name%></td>
+				<td><%=venderdetail.gift%></td>
+				<td><%=venderdetail.start%></td>
+				<td><%=venderdetail.num_of_people%></td>
+
+                        </tr>
+                <%end%>
+        </tbody>
+</table>
+

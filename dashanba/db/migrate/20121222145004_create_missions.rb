@@ -10,7 +10,7 @@ class CreateMissions < ActiveRecord::Migration
       t.integer :num_of_people
 
       t.references :user
-      t.references :vender
+      t.references :venderdetail
 
       t.timestamps
     end

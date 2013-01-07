@@ -13,21 +13,22 @@
     <div id="id-all" class="all"  >
       <div id="id-top" calss="top">
       <div id="id-brand" class="brand"><%=link_to image_tag("#{'logo.png'}"),introduce_index_path%></div>
-	<div id="menu"  style=" width:750px;height: 80px; float:left; margin-top: 20px;">
+	<div id="menu"  style=" width:750px;height: 80px; float:left; margin-top: 10px;">
 	<table>
 	<tr>
 		<td><%=image_tag("#{'menu_dashnba.png'}")%></td>
+		<td><%=image_tag("#{'menu_car.png'}")%></td>
 		<td><%=image_tag("#{'menu_garbage.png'}")%></td>
 		<td><%=image_tag("#{'menu_people.png'}")%></td>
 		<td><%=image_tag("#{'menu_login.png'}")%></td>
 	</tr>
 	<tr>
 	<td><%=link_to "大山背介紹", introduce_briefIntro_path%></td>
+	<td><%=link_to "教你怎麼玩大山背", introduce_tour_path%></td>
 	<td><%=link_to "“換”想大山背", mission_index_path%></td>
 	<td><%=link_to "關於我們", introduce_aboutus_path%></td>
 	<td><% if current_user %>
-	    			Signed in as <strong><%= current_user.name %></strong>!
-	    			<%= link_to "登出", signout_path, id: "sign_out" %>
+					<strong> <%= link_to current_user.name+" log out",signout_path, id: "sign_out"%></strong>
 	  			<% else %>
 	    			<%= link_to "登入", "/auth/facebook", id: "sign_in" %>
   			<% end %>

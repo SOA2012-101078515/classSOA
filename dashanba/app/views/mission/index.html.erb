@@ -5,7 +5,7 @@
 <%=image_tag("#{'exchange.png'}")%>
 <div id="sign">
 <%=link_to_if current_user.nil?,"login and reserve", " /auth/facebook" do
-	link_to "reservation", new_mission_path
+        link_to "reservation", new_mission_path
    end
 %>
 </div>

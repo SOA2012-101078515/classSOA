@@ -8,6 +8,8 @@ class CreateMissions < ActiveRecord::Migration
       t.string :v_name
       t.datetime :start
       t.integer :num_of_people
+      t.string :c_phone
+      t.string :c_email
 
       t.references :user
       t.references :venderdetail

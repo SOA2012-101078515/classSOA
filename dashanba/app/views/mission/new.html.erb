@@ -9,6 +9,12 @@
 	<%= label :mission, :venderdetail_id, 'vender_id'%>
         <%= text_field :mission, :venderdetail_id, :value=>1%>
 
+	<%= label :mission, :c_phone,'phone'%>
+	<%= text_field :mission, :c_phone%>
+
+        <%= label :mission, :c_email,'email'%>
+        <%= text_field :mission, :c_email%>
+
         <%= label :mission, :c_name, '姓名'%>
         <%= text_field :mission, :c_name, :value=>current_user.name%>
 

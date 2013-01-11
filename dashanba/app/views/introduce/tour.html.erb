@@ -1,9 +1,19 @@
-<button onclick='movepic("/assets/play_tour.png")'>play_tour</button>
-<button onclick='movepic("/assets/play_space.png")'>play_space</button>
-<button onclick='movepic("/assets/play_traffic.png")'>play_traffic</button>
-<button onclick='movepic("/assets/play_walkway.png")'>play_walkway</button>
 
+<img id="banner_play" src="/assets/banner_play.png">
+
+<div style="height:100px; width: 1000px">
+	<div style=" width:200px;height: 100px;float:left">
+	    <ul style="list-style-type:none;">
+        	<li onclick='movepic("/assets/play_tour.png")'><img src="/assets/button_tour.png" width=140px ALIGN="ABSMIDDLE"></li>
+        	<li onclick='movepic("/assets/play_space.png")'><img src="/assets/button_space.png" width=140px ALIGN="ABSMIDDLE"></li>
+        	<li onclick='movepic("/assets/play_traffic.png")'><img src="/assets/button_traffic.png" width=140px ALIGN="ABSMIDDLE"></li>
+		<li onclick='movepic("/assets/play_walkway.png")'><img src="/assets/button_walkway.png" width=140px ALIGN="ABSMIDDLE"></li>
+	    </ul>
+	</div>
+	<div style=" width:800px;float:left">
 <img id="tour" src="/assets/play_walkway.png">
+	</div>
+</div>
 
 <script>
         function movepic(img_src) {
@@ -11,4 +21,5 @@
         }
 
 </script>
+
 

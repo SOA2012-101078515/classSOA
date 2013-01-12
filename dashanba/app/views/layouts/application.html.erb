@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Firstproject</title>
+  <title>Dashanba tour system</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
 
@@ -9,8 +9,12 @@
 </head>
 
 <body onresize = "adjustWidth()" onload="document.onkeydown=keyf">
+<div id="fb-root"></div>
+
+<div class="fb-like-box" style="float:right;margin-top: 190px" data-href="https://www.facebook.com/TsingHuadashanba" data-width="220px" data-show-faces="true" data-stream="true" data-header="true"></div>
+<div style="float:left ;margin-top: 190px"><%=link_to image_tag("#{'adver.png'}"),"http://tw.myblog.yahoo.com/kao550025/profile"%></div>
 <canvas id="myCanvas"></canvas>
-    <div id="id-all" class="all"  >
+    <div id="id-all" class="all">
       <div id="id-top" calss="top">
       <div id="id-brand" class="brand"><%=link_to image_tag("#{'logo.png'}"),introduce_index_path%></div>
 	<div id="menu"  style=" width:750px;height: 80px; float:left; margin-top: 10px;">
@@ -52,7 +56,13 @@
 </body>
 </html>
 <script>
-
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=384717311618550";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
 	adjustWidth();
         function adjustWidth(){
                 var w = 0;
